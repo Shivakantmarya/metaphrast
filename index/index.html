@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome CDN Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <span class="customIcon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="head">
+      <div class="logo2">M<sub>T</sub>P</div>
+      <div><a href="files.html"> <i class="fa-regular fa-folder-open"></i> Your Files</a></div>
+    </div>
+    <div class ="logo hide">
+      <h1 id ="logo1">M<sub>T</sub>P</h1>
+      <p id="title">metaPhrast</p>
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea
+            spellcheck="false"
+            class="from-text"
+            placeholder="Enter text"
+          ></textarea>
+          <textarea
+            spellcheck="false"
+            readonly
+            disabled
+            class="to-text"
+            placeholder="Translation"></textarea>
+
+        <div class="details">
+            <textarea 
+            spellcheck="false"
+            readonly
+            disatextarea
+            id="meaning"
+            placeholder="Defination :"></textarea>
+
+            <textarea 
+            spellcheck="false"
+            readonly
+            disabled
+            id="synonyms"
+            placeholder="Synonyms : "></textarea>
+
+            <textarea 
+            spellcheck="false"
+            readonly
+            disabled
+            id="example"
+            placeholder="Example : "></textarea>
+        </div>
+
+
+
+           <!-- <span id="example">example</span> -->
+            <!-- <span id="synonyms">yes</span>  -->
+        
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button onclick="speakButton()" class="btn"><i class="fa-solid fa-microphone-lines"></i></button>
+      <button id="translateBtn">Translate Text</button>
+      <button id="newTranslateBtn">+ New Translation</button>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

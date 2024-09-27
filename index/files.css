@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #012824eb;
+}
+span{
+    color:white;
+}
+
+
+button#back-home{
+    cursor: pointer;
+    background-color: #07c6dd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+button#back-home:hover{
+    background-color:gray;
+}
+button#back-home:active{
+    background-color:red;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.container {
+    text-align: center;
+    margin: 21px;
+}
+label{
+background-color: #bd9898;
+padding: 7px;
+border: none;
+outline: none;
+border-radius: 12px;
+font-weight: 600;
+cursor: pointer;
+}
+label:hover{
+    background-color: gray;
+}
+label:active{
+    background-color: red;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-info {
+    margin-top: 20px;
+}
+
+.file-container {
+    margin-top: 20px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.file-actions {
+    margin-left: auto;
+}
+
+.action-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.delete-btn {
+    background-color: red;
+}
+.delete-btn:hover {
+    background-color: gray;
+}
+.delete-btn:active {
+    background-color: red;
+}
+
+.open-btn {
+    background-color: #28a745;
+}
+.open-btn:hover{
+    background-color: gray;
+}
+.open-btn:active{
+    background-color:red;
+}
+
+/* .share-btn {
+    background-color: #ffc107;
+} */
+
+#deleteAllBtn {
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+#deleteAllBtn:hover{
+    background-color:gray;
+}
+#deleteAllBtn:active{
+    background-color:red;
+}
